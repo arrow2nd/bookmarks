@@ -8,7 +8,7 @@ if (!body) {
 }
 
 const id = body.match(/(?<=ID\s)(.+)/)?.[0];
-console.log(body, id);
+console.log(body, body.match(/(?<=ID\s)(.+)/));
 if (!id) {
   throw new Error("IDがありません");
 }
