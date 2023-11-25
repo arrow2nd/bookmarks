@@ -1,8 +1,11 @@
+import IconTrashX from "tabler-icons/trash-x.tsx";
 import { Bookmark } from "~/types/bookmark.ts";
+import { createRemoveIssueURL } from "~/libs/gh.ts";
 
 export default function Item(
-  { title, url, tag, description, color }: Bookmark,
+  { id, title, url, tag, description, color }: Bookmark,
 ) {
+  const removeURL = createRemoveIssueURL(id, title);
   const subText = description ? `${tag} | ${description}` : tag;
 
   return (
@@ -10,7 +13,7 @@ export default function Item(
       <div
         class={`w-3 h-3 border-gray-200 rounded-full bg-[${color}]`}
       />
-      <div class="ml-6">
+      <div class="flex-1 ml-6">
         <a
           class="block underline font-semibold hover:text-gray-500"
           href={url}
@@ -23,6 +26,14 @@ export default function Item(
           {subText}
         </span>
       </div>
+      <a
+        class="ml-1 text-gray-400 hover:text-red-400 transition-colors"
+        href={removeURL}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <IconTrashX />
+      </a>
     </div>
   );
 }
