@@ -1,0 +1,50 @@
+name: add
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  post-music-url:
+    if: contains(github.event.issue.labels.*.name, 'add')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set branch name as environment variable
+        run: echo "NEW_BRANCH_NAME=add-bookmark-$(date '+%s')" >> $GITHUB_ENV
+
+      - name: Extract URL and Tags from Issue body
+        run: |
+          body="${{ github.event.issue.body }}"
+          url=$(echo "$body" | grep -oP 'https?://\S+')
+          tags=$(echo "$body" | grep -oP '(?<=タグ\n).+')
+          echo "URL=$url" >> $GITHUB_ENV
+          echo "TAG=$tags" >> $GITHUB_ENV
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create new branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: git switch -c ${{ env.NEW_BRANCH_NAME }}
+
+      - name: Setup deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+      - name: Add bookmark
+        run: deno task bookmark:add $URL $TAG
+
+      - name: Format
+        run: deno task fmt:data
+
+      - name: Commit the changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          file_pattern: "/data/*.ts"
+          branch: ${{ env.NEW_BRANCH_NAME }}
+          commit_message: "🍱 ブックマークを追加 #${{ github.event.pull_request.number }}"
+
+      - name: Create pull request
+        run: gh pr create --title "🍱 ブックマークを追加" --body "ref. ${{ github.event.pull_request.number }}"
