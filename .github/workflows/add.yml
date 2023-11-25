@@ -36,9 +36,9 @@ jobs:
         with:
           file_pattern: "./data/*.ts"
           branch: ${{ env.NEW_BRANCH_NAME }}
-          commit_message: "🍱 ブックマークを追加 #${{ github.event.issue.number }}"
+          commit_message: "🔖 ブックマークを追加 #${{ github.event.issue.number }}"
 
       - name: Create pull request
-        run: gh pr create --title "🍱 ブックマークを追加" --body "ref. #${{ github.event.issue.number }}"
+        run: gh pr create --title "🔖 ブックマークを追加" --body "ref. #${{ github.event.issue.number }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
