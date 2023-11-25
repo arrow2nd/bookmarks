@@ -25,7 +25,7 @@ jobs:
         with:
           deno-version: v1.x
 
-      - name: Add bookmark
+      - name: Remove bookmark
         run: deno task bookmark:remove "${{ github.event.issue.body }}"
 
       - name: Format
