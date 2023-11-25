@@ -12,14 +12,6 @@ jobs:
       - name: Set branch name as environment variable
         run: echo "NEW_BRANCH_NAME=add-bookmark-$(date '+%s')" >> $GITHUB_ENV
 
-      - name: Extract URL and Tags from Issue body
-        run: |
-          body="${{ github.event.issue.body }}"
-          url=$(echo "$body" | grep -oP 'https?://\S+')
-          tags=$(echo "$body" | grep -oP '(?<=タグ\n).+')
-          echo "URL=$url" >> $GITHUB_ENV
-          echo "TAG=$tags" >> $GITHUB_ENV
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -34,7 +26,7 @@ jobs:
           deno-version: v1.x
 
       - name: Add bookmark
-        run: deno task bookmark:add $URL $TAG
+        run: deno task bookmark:add "${{ github.event.issue.body }}"
 
       - name: Format
         run: deno task fmt:data
