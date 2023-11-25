@@ -12,7 +12,7 @@ if (!body) {
   throw new Error("bodyがありません");
 }
 
-const url = body.match(/(https?:\/\\S+)/)?.[0];
+const url = body.match(/(https?:\/\/\S+)/)?.[0];
 const tag = body.match(/(?<=タグ\s)(.+)/)?.[0];
 
 // URLが有効か確認
