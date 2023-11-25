@@ -5,7 +5,7 @@ on:
     types: [opened, edited]
 
 jobs:
-  post-music-url:
+  add-bookmark:
     if: contains(github.event.issue.labels.*.name, 'add')
     runs-on: ubuntu-latest
     steps:
