@@ -9,7 +9,9 @@ export default function App({ Component }: AppProps) {
         <title>bookmarks</title>
       </head>
       <body>
-        <Component />
+        <main class="min-h-screen bg-stone-100">
+          <Component />
+        </main>
       </body>
     </html>
   );
