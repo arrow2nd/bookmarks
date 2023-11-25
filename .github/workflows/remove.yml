@@ -39,6 +39,6 @@ jobs:
           commit_message: "🔖 ブックマークを削除 #${{ github.event.issue.number }}"
 
       - name: Create pull request
-        run: gh pr create --title "🔖 ブックマークを削除" --body "ref. #${{ github.event.issue.number }}"
+        run: gh pr create --title "🔖 ブックマークを削除" --body "Closes #${{ github.event.issue.number }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
