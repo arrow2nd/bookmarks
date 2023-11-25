@@ -7,9 +7,8 @@ if (!body) {
   throw new Error("bodyがありません");
 }
 
-console.log(Deno.args);
-
 const id = body.match(/(?<=ID\s)(.+)/)?.[0];
+console.log(body, id);
 if (!id) {
   throw new Error("IDがありません");
 }
