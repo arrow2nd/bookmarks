@@ -1,7 +1,13 @@
 import { bookmarks } from "~/data/bookmarks.ts";
 import { write } from "~/tools/libs/write.ts";
 
-const id = Deno.args[0];
+// Issueのbody
+const body = Deno.args[0];
+if (!body) {
+  throw new Error("bodyがありません");
+}
+
+const id = body.match(/(?<=ID\s)(.+)/)?.[0];
 if (!id) {
   throw new Error("IDがありません");
 }

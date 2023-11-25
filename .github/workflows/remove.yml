@@ -1,16 +1,16 @@
-name: add
+name: remove
 
 on:
   issues:
     types: [opened, edited]
 
 jobs:
-  add-bookmark:
-    if: "contains(github.event.issue.labels.*.name, 'add') && !contains(github.event.issue.labels.*.name, 'remove')"
+  remove-bookmark:
+    if: "!contains(github.event.issue.labels.*.name, 'add') && contains(github.event.issue.labels.*.name, 'remove')"
     runs-on: ubuntu-latest
     steps:
       - name: Set branch name as environment variable
-        run: echo "NEW_BRANCH_NAME=add-bookmark-$(date '+%s')" >> $GITHUB_ENV
+        run: echo "NEW_BRANCH_NAME=remove-bookmark-$(date '+%s')" >> $GITHUB_ENV
 
       - name: Checkout
         uses: actions/checkout@v4
@@ -26,7 +26,7 @@ jobs:
           deno-version: v1.x
 
       - name: Add bookmark
-        run: deno task bookmark:add "${{ github.event.issue.body }}"
+        run: deno task bookmark:remove "${{ github.event.issue.body }}"
 
       - name: Format
         run: deno task fmt:data
@@ -36,9 +36,9 @@ jobs:
         with:
           file_pattern: "./data/*.ts"
           branch: ${{ env.NEW_BRANCH_NAME }}
-          commit_message: "🔖 ブックマークを追加 #${{ github.event.issue.number }}"
+          commit_message: "🔖 ブックマークを削除 #${{ github.event.issue.number }}"
 
       - name: Create pull request
-        run: gh pr create --title "🔖 ブックマークを追加" --body "ref. #${{ github.event.issue.number }}"
+        run: gh pr create --title "🔖 ブックマークを削除" --body "ref. #${{ github.event.issue.number }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
