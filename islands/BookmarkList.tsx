@@ -53,7 +53,7 @@ export default function BookmarkList({ options }: BookmarkListProps) {
           <IconSearch />
         </button>
       </form>
-      <div class="mt-8 px-2">
+      <div class="mt-8 px-2 space-y-4">
         {results.value.map((bookmark) => <Item {...bookmark} />)}
       </div>
     </div>
