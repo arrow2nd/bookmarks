@@ -1,5 +1,4 @@
 import { useSignal } from "@preact/signals";
-import IconSearch from "tabler-icons/search.tsx";
 
 import { Bookmark } from "~/types/bookmark.ts";
 import Item from "~/components/Item.tsx";
