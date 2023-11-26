@@ -1,4 +1,5 @@
 import IconTrashX from "tabler-icons/trash-x.tsx";
+
 import { Bookmark } from "~/types/bookmark.ts";
 import { createRemoveIssueURL } from "~/libs/gh.ts";
 
@@ -15,21 +16,29 @@ export default function Item(
           color || "#D162CB"
         }]`}
       />
-      <div class="flex-1 ml-6">
+      <div class="flex-1 ml-6 overflow-hidden">
         <a
-          class="block underline font-semibold hover:text-gray-500"
+          class="block underline font-semibold hover:text-gray-500 truncate"
           href={url}
           target="_blank"
           rel="noopener noreferrer"
         >
           {title}
         </a>
-        <span class="text-sm text-gray-500 overflow-hidden text-ellipsis">
+        <p
+          class="text-sm text-gray-500 line-clamp-2"
+          style={{
+            overflow: "hidden",
+            display: "-webkit-box",
+            "-webkit-box-orient": "vertical",
+            "-webkit-line-clamp": 2,
+          }}
+        >
           {subText}
-        </span>
+        </p>
       </div>
       <a
-        class="ml-1 text-gray-400 hover:text-red-400 transition-colors"
+        class="ml-4 text-gray-400 hover:text-red-400 transition-colors"
         href={removeURL}
         target="_blank"
         rel="noopener noreferrer"
