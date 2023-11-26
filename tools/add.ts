@@ -6,8 +6,8 @@ import { bookmarks } from "~/data/bookmarks.ts";
 import { getThemeColor } from "~/tools/libs/color.ts";
 import { write } from "~/tools/libs/write.ts";
 
-let url = "";
-let tag = "";
+let url: string | undefined;
+let tag: string | undefined;
 
 if (Deno.env.get("CI")) {
   // CI上で実行されたならIssueのBodyを受け取ることを想定
@@ -16,13 +16,15 @@ if (Deno.env.get("CI")) {
     throw new Error("bodyがありません");
   }
 
-  url = body.match(/(https?:\/\/\S+)/)?.[0];
-  tag = body.match(/(?<=タグ\s)(.+)/)?.[0];
+  url = body.match(/(https?:\/\/\S+)/gm)?.[0];
+  tag = body.match(/(?<=タグ\s)(.+)/gm)?.[0];
 } else {
   // 引数から受け取る
   url = Deno.args[0];
   tag = Deno.args[1];
 }
+
+console.log(url, tag);
 
 // URLが有効か確認
 if (!url || !URL.canParse(url)) {
