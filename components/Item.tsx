@@ -12,7 +12,7 @@ export default function Item(
     <div class="flex items-center animate-fade-in">
       <div
         class={`w-3 h-3 border-gray-200 rounded-full bg-[${
-          color || "#ffffff"
+          color || "#D162CB"
         }]`}
       />
       <div class="flex-1 ml-6">
