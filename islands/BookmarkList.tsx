@@ -37,7 +37,6 @@ export default function BookmarkList({ options }: BookmarkListProps) {
         <select
           onChange={(e) => {
             tag.value = e.currentTarget.value;
-            console.log(e);
           }}
         >
           <option value="all">すべて</option>
