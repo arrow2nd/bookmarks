@@ -72,7 +72,7 @@ const id = toHashString(digest);
 // ブックマークに追加
 const addBookmark: Bookmark = {
   id,
-  title: doc.title,
+  title: doc.title.trim() || url,
   url,
   tag: tag || "その他",
   description,
