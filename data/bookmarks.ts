@@ -22,5 +22,9 @@ export const bookmarks: Bookmark[] = [{
   "description":
     "THE IDOLM@STERシリーズに登場するアイドル・ユニットのカラーが検索できるWebアプリ",
   "color": "#2681c8",
+}, {
+  "id": "09993a859dcab254c8c64938cc38c250e7d95a45ba3b78cb9ab667b06638c5eb",
+  "title": "What3Idols",
+  "url": "https://what3idols.vercel.app/",
+  "tag": "imas",
 }];
-
