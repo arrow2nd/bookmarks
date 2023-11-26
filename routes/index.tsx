@@ -8,9 +8,7 @@ export default async function Home(props: PageProps) {
   const path = new URL("./api/tags", props.url.toString());
 
   const res = await fetch(path);
-  console.log(path, res);
-
-  const json = await res.json() as string[];
+  const json = (await res.json()) as string[];
 
   return (
     <div class="m-auto p-6 md:p-8 max-w-screen-sm">
