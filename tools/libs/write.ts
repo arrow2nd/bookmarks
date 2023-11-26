@@ -5,6 +5,8 @@ import { Bookmark } from "~/types/bookmark.ts";
  * @param newBookmarks 新しいブックマーク配列
  */
 export function write(newBookmarks: Bookmark[]) {
+  newBookmarks = newBookmarks.sort((a, b) => a.tag.localeCompare(b.tag, "ja"));
+
   const out = `
   import { Bookmark } from "~/types/bookmark.ts";
 
