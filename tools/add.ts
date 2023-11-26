@@ -16,15 +16,14 @@ if (Deno.env.get("CI")) {
     throw new Error("bodyがありません");
   }
 
-  url = body.match(/(https?:\/\/\S+)/gm)?.[0];
-  tag = body.match(/(?<=タグ\s)(.+)/gm)?.[0];
+  const matched = body.match(/(https?:\/\/[^[\s]+)\s*\[(\S+)\]/);
+  url = matched?.[1];
+  tag = matched?.[2];
 } else {
   // 引数から受け取る
   url = Deno.args[0];
   tag = Deno.args[1];
 }
-
-console.log(url, tag);
 
 // URLが有効か確認
 if (!url || !URL.canParse(url)) {

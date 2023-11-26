@@ -8,10 +8,7 @@ const baseURL = "https://github.com/arrow2nd/bookmarks/issues/new";
  */
 export function createAddIssueURL(url: string, tag: string) {
   const issueURL = new URL(baseURL);
-  const body = `## URL
-${url}
-## タグ
-${tag}`;
+  const body = `${url} [${tag}]`;
 
   issueURL.searchParams.append("title", "🔖 ブックマークを追加");
   issueURL.searchParams.append("body", body);
