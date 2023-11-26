@@ -9,6 +9,13 @@ export default function Item(
   const removeURL = createRemoveIssueURL(id, title);
   const subText = description ? `${tag} | ${description}` : tag;
 
+  const lineClamp = {
+    overflow: "hidden",
+    display: "-webkit-box",
+    "-webkit-box-orient": "vertical",
+    "-webkit-line-clamp": 2,
+  };
+
   return (
     <div class="flex items-center animate-fade-in">
       <div
@@ -18,22 +25,15 @@ export default function Item(
       />
       <div class="flex-1 ml-6 overflow-hidden">
         <a
-          class="block underline font-semibold hover:text-gray-500 truncate"
+          class="block underline font-semibold hover:text-gray-500"
+          style={lineClamp}
           href={url}
           target="_blank"
           rel="noopener noreferrer"
         >
           {title}
         </a>
-        <p
-          class="text-sm text-gray-500 line-clamp-2"
-          style={{
-            overflow: "hidden",
-            display: "-webkit-box",
-            "-webkit-box-orient": "vertical",
-            "-webkit-line-clamp": 2,
-          }}
-        >
+        <p class="text-sm text-gray-500" style={lineClamp}>
           {subText}
         </p>
       </div>
