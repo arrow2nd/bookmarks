@@ -41,7 +41,7 @@ jobs:
       - name: Check if PR exists
         id: check_pr_exists
         run: |
-          echo "count=$(gh pr list -s all | grep $NEW_BRANCH_NAME | wc -l)" >> $GITHUB_OUTPUT
+          echo "count=$(gh pr list -s all | grep ${{ env.NEW_BRANCH_NAME }} | wc -l)" >> $GITHUB_OUTPUT
 
       - name: Create pull request
         if: ${{ steps.check_pr_exists.outputs.count == 0 }}
