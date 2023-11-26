@@ -27,4 +27,10 @@ export const bookmarks: Bookmark[] = [{
   "title": "What3Idols",
   "url": "https://what3idols.vercel.app/",
   "tag": "imas",
+}, {
+  "id": "952c5d2dc0356025d3fcaddc0907d05141f56dbe2589e008d6e3b904a080fc1b",
+  "title": "imas-artwork-search | アイマスアートワーク検索",
+  "url": "https://imas-artwork-search.pages.dev/",
+  "tag": "imas",
+  "color": "#4f87c6",
 }];
