@@ -6,7 +6,10 @@ on:
 
 jobs:
   add-bookmark:
-    if: "contains(github.event.issue.labels.*.name, 'add') && !contains(github.event.issue.labels.*.name, 'remove')"
+    if: |
+      github.event.issue.state == 'open' &&
+      contains(github.event.issue.labels.*.name, 'add') &&
+      !contains(github.event.issue.labels.*.name, 'remove')
     runs-on: ubuntu-latest
     steps:
       - name: Set branch name as environment variable
