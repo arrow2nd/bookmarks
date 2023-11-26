@@ -36,7 +36,7 @@ export default function NewFormModal({ options }: NewFormProps) {
               </select>
               <input
                 class="flex-1 px-4 py-2 focus:outline-none"
-                placeholder="URL"
+                placeholder="ブックマークに追加するURL"
                 onInput={(e) => {
                   url.value = e.currentTarget.value;
                 }}
