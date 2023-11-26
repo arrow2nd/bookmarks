@@ -1,15 +1,11 @@
-import { PageProps } from "$fresh/server.ts";
-
 import IconDogBowl from "tabler-icons/dog-bowl.tsx";
+
 import BookmarkList from "~/islands/BookmarkList.tsx";
 import NewFormModal from "~/islands/NewModalForm.tsx";
+import { bookmarks } from "~/data/bookmarks.ts";
 
-export default async function Home(props: PageProps) {
-  const path = new URL("./api/tags", props.url.toString());
-
-  const res = await fetch(path);
-  console.log(await res.text());
-  const json = [];
+export default function Home() {
+  const tags = [...new Set(bookmarks.map(({ tag }) => tag))];
 
   return (
     <div class="m-auto p-6 md:p-8 max-w-screen-sm">
@@ -17,8 +13,8 @@ export default async function Home(props: PageProps) {
         <IconDogBowl />
         <span class="ml-1">bookmarks</span>
       </h1>
-      <BookmarkList options={json} />
-      <NewFormModal options={json} />
+      <BookmarkList options={tags} />
+      <NewFormModal options={tags} />
     </div>
   );
 }
