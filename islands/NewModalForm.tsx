@@ -8,7 +8,7 @@ type NewFormProps = {
 };
 
 export default function NewFormModal({ options }: NewFormProps) {
-  const showModal = useSignal(false);
+  const showModal = useSignal(true);
   const tag = useSignal(options[0]);
   const url = useSignal("");
 
@@ -19,7 +19,7 @@ export default function NewFormModal({ options }: NewFormProps) {
           <div class="fixed top-0 left-0 flex justify-center items-center w-screen h-screen">
             <div class="fixed w-screen h-screen bg-black opacity-50" />
             <form
-              class="w-full md:w-1/2 mx-6 px-4 flex items-center bg-white border-2 border-gray-200 focus-within:border-gray-500 rounded-lg shadow-2xl animate-fade-in"
+              class="md:w-1/2 mx-4 p-4 md:p-6 space-y-2 bg-white rounded-md shadow-2xl animate-fade-in z-10"
               onSubmit={(e) => {
                 e.preventDefault();
                 window.location.href = createAddIssueURL(
@@ -28,15 +28,11 @@ export default function NewFormModal({ options }: NewFormProps) {
                 );
               }}
             >
-              <select
-                onChange={(e) => {
-                  tag.value = e.currentTarget.value;
-                }}
-              >
+              <select class="block bg-white">
                 {options.map((t) => <option value={t}>{t}</option>)}
               </select>
               <input
-                class="flex-1 px-4 py-2 focus:outline-none"
+                class="w-full text-4xl md:text-5xl bg-white focus:outline-none"
                 placeholder="URLを入力"
                 onInput={(e) => {
                   url.value = e.currentTarget.value;
