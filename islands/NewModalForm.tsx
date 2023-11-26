@@ -16,9 +16,10 @@ export default function NewFormModal({ options }: NewFormProps) {
     <>
       {showModal.value &&
         (
-          <div class="fixed top-0 left-0 flex justify-center items-center w-screen h-screen bg-black opacity-50">
+          <div class="fixed top-0 left-0 flex justify-center items-center w-screen h-screen">
+            <div class="fixed w-screen h-screen bg-black opacity-50" />
             <form
-              class="mx-8 w-full px-4 flex items-center bg-white border-2 border-gray-200 focus-within:border-gray-500 rounded-lg animate-fade-in"
+              class="w-full md:w-1/2 mx-6 px-4 flex items-center bg-white border-2 border-gray-200 focus-within:border-gray-500 rounded-lg shadow-2xl animate-fade-in"
               onSubmit={(e) => {
                 e.preventDefault();
                 window.location.href = createAddIssueURL(
@@ -36,7 +37,7 @@ export default function NewFormModal({ options }: NewFormProps) {
               </select>
               <input
                 class="flex-1 px-4 py-2 focus:outline-none"
-                placeholder="ブックマークに追加するURL"
+                placeholder="追加するURL"
                 onInput={(e) => {
                   url.value = e.currentTarget.value;
                 }}
