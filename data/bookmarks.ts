@@ -14,5 +14,13 @@ export const bookmarks: Bookmark[] = [{
   "tag": "imas",
   "description": "シャイニーカラーズの衣装ポエムが検索できるサイトです",
   "color": "#4c7abe",
+}, {
+  "id": "849f92b4aa3f637ee3d1be79245e1513dd9520cc4a38d8fc8bb8d02a290fb999",
+  "title": "im@s-palette | アイマスカラー検索",
+  "url": "https://imas-palette.vercel.app/",
+  "tag": "imas",
+  "description":
+    "THE IDOLM@STERシリーズに登場するアイドル・ユニットのカラーが検索できるWebアプリ",
+  "color": "#2681c8",
 }];
 
