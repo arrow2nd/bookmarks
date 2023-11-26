@@ -6,14 +6,23 @@ import { bookmarks } from "~/data/bookmarks.ts";
 import { getThemeColor } from "~/tools/libs/color.ts";
 import { write } from "~/tools/libs/write.ts";
 
-// Issueのbody
-const body = Deno.args[0];
-if (!body) {
-  throw new Error("bodyがありません");
-}
+let url = "";
+let tag = "";
 
-const url = body.match(/(https?:\/\/\S+)/)?.[0];
-const tag = body.match(/(?<=タグ\s)(.+)/)?.[0];
+if (Deno.env.get("CI")) {
+  // CI上で実行されたならIssueのBodyを受け取ることを想定
+  const body = Deno.args[0];
+  if (!body) {
+    throw new Error("bodyがありません");
+  }
+
+  url = body.match(/(https?:\/\/\S+)/)?.[0];
+  tag = body.match(/(?<=タグ\s)(.+)/)?.[0];
+} else {
+  // 引数から受け取る
+  url = Deno.args[0];
+  tag = Deno.args[1];
+}
 
 // URLが有効か確認
 if (!url || !URL.canParse(url)) {
