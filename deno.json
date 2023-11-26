@@ -6,7 +6,7 @@
     "build": "deno run -A dev.ts build",
     "preview": "deno run -A main.ts",
     "update": "deno run -A -r https://fresh.deno.dev/update .",
-    "bookmark:add": "deno run --allow-net --allow-read --allow-write ./tools/add.ts",
+    "bookmark:add": "deno run --allow-env --allow-net --allow-read --allow-write ./tools/add.ts",
     "bookmark:remove": "deno run --allow-read --allow-write ./tools/remove.ts",
     "fmt:data": "deno fmt ./data"
   },
