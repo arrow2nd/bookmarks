@@ -46,7 +46,7 @@ export default function BookmarkList({ options }: BookmarkListProps) {
           {options.map((t) => <option value={t}>{t}</option>)}
         </select>
         <input
-          class="block text-4xl md:text-5xl bg-stone-100 focus:outline-none"
+          class="w-full text-4xl md:text-5xl bg-stone-100 focus:outline-none"
           placeholder="ブックマークを検索"
           onInput={(e) => {
             query.value = e.currentTarget.value;
