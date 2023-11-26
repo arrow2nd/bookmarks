@@ -11,7 +11,9 @@ export default function Item(
   return (
     <div class="flex items-center animate-fade-in">
       <div
-        class={`w-3 h-3 border-gray-200 rounded-full bg-[${color}]`}
+        class={`w-3 h-3 border-gray-200 rounded-full bg-[${
+          color || "#ffffff"
+        }]`}
       />
       <div class="flex-1 ml-6">
         <a

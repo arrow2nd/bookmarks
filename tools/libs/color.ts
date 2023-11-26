@@ -1,4 +1,4 @@
-import { createCanvas, loadImage } from "canvas";
+import { createCanvas, Image, loadImage } from "canvas";
 import { Color } from "~/types/bookmark.ts";
 
 /**
@@ -7,9 +7,16 @@ import { Color } from "~/types/bookmark.ts";
  * @returns カラーコード
  */
 export async function getThemeColor(url: string): Promise<Color | undefined> {
-  const image = await loadImage(url);
-  const canvas = createCanvas(image.width(), image.height());
+  let image: Image;
 
+  try {
+    image = await loadImage(url);
+  } catch (e) {
+    console.error(e);
+    return;
+  }
+
+  const canvas = createCanvas(image.width(), image.height());
   const ctx = canvas.getContext("2d");
   if (!ctx) {
     return;
