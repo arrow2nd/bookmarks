@@ -9,7 +9,7 @@ export default function App({ Component }: AppProps) {
         <title>bookmarks</title>
       </head>
       <body>
-        <main class="min-h-screen bg-stone-100">
+        <main class="flex justify-center items-center px-6 py-12 min-h-screen bg-stone-100">
           <Component />
         </main>
       </body>

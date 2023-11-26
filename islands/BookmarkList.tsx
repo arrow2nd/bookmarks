@@ -1,5 +1,6 @@
 import { useSignal } from "@preact/signals";
 import IconSearch from "tabler-icons/search.tsx";
+
 import { Bookmark } from "~/types/bookmark.ts";
 import Item from "~/components/Item.tsx";
 
@@ -26,36 +27,35 @@ export default function BookmarkList({ options }: BookmarkListProps) {
   };
 
   return (
-    <div>
+    <>
       <form
-        class="w-full px-4 flex items-center bg-white border-2 border-gray-200 focus-within:border-gray-500 rounded-lg"
+        class="space-y-2"
         onSubmit={(e) => {
           handleSubmit();
           e.preventDefault();
         }}
       >
         <select
+          class="block bg-stone-100"
           onChange={(e) => {
             tag.value = e.currentTarget.value;
+            handleSubmit();
           }}
         >
           <option value="all">すべて</option>
           {options.map((t) => <option value={t}>{t}</option>)}
         </select>
         <input
-          class="flex-1 px-4 py-2 focus:outline-none"
-          placeholder="Search"
+          class="block text-4xl md:text-5xl bg-stone-100 focus:outline-none"
+          placeholder="ブックマークを検索"
           onInput={(e) => {
             query.value = e.currentTarget.value;
           }}
         />
-        <button type="submit">
-          <IconSearch />
-        </button>
       </form>
       <div class="mt-8 px-2 space-y-4">
         {results.value.map((bookmark) => <Item {...bookmark} />)}
       </div>
-    </div>
+    </>
   );
 }

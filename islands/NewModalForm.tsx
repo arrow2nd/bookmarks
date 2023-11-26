@@ -37,14 +37,11 @@ export default function NewFormModal({ options }: NewFormProps) {
               </select>
               <input
                 class="flex-1 px-4 py-2 focus:outline-none"
-                placeholder="追加するURL"
+                placeholder="URLを入力"
                 onInput={(e) => {
                   url.value = e.currentTarget.value;
                 }}
               />
-              <button type="submit">
-                <IconBookmarkEdit />
-              </button>
             </form>
           </div>
         )}
