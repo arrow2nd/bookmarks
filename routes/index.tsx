@@ -5,10 +5,12 @@ import BookmarkList from "~/islands/BookmarkList.tsx";
 import NewFormModal from "~/islands/NewModalForm.tsx";
 
 export default async function Home(props: PageProps) {
-  const path = new URL("./api/tags", props.url);
+  const path = new URL("./api/tags", props.url.toString());
 
   const res = await fetch(path);
   const json = await res.json() as string[];
+
+  console.log(path, res);
 
   return (
     <div class="m-auto p-6 md:p-8 max-w-screen-sm">
