@@ -8,7 +8,7 @@ type NewFormProps = {
 };
 
 export default function NewFormModal({ options }: NewFormProps) {
-  const showModal = useSignal(true);
+  const showModal = useSignal(false);
   const tag = useSignal(options[0]);
   const url = useSignal("");
 
