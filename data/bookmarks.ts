@@ -47,7 +47,7 @@ export const bookmarks: Bookmark[] = [{
   "url": "https://paiza.io/ja/projects/new",
   "tag": "Playground",
   "description":
-    "{{description ? description : 'paiza.IOはオンラインですぐにプログラミングが始められる、オンライン実行環境です。C,C++,Java,Ruby,Python,PHP,Perlなど主要24言語に対応。プログラミング学習にも。'}}",
+    "paiza.IOはオンラインですぐにプログラミングが始められる、オンライン実行環境です。C,C++,Java,Ruby,Python,PHP,Perlなど主要24言語に対応。プログラミング学習にも。",
   "color": "#2d859b",
 }, {
   "id": "0ebb21c18bb462dae8b3d3126ccce7c376082f501ed0ed4aac16309d04b6dd44",
@@ -490,4 +490,3 @@ export const bookmarks: Bookmark[] = [{
     "匿名ラジオ専門検索エンジン（非公式）です。調べにくいニッチなキーワードも、だいたい検索できます。",
   "color": "#ffffff",
 }];
-
