@@ -2,7 +2,7 @@ name: remove
 
 on:
   issues:
-    types: [opened, edited]
+    types: [opened]
 
 jobs:
   remove-bookmark:

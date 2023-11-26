@@ -2,7 +2,7 @@ name: add
 
 on:
   issues:
-    types: [opened, edited]
+    types: [opened]
 
 jobs:
   add-bookmark:
