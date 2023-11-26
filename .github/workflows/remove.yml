@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set branch name as environment variable
-        run: echo "NEW_BRANCH_NAME=remove-bookmark-$(date '+%s')" >> $GITHUB_ENV
+        run: echo "NEW_BRANCH_NAME=add-bookmark-${{ github.event.issue.number }}" >> $GITHUB_ENV
 
       - name: Checkout
         uses: actions/checkout@v4
@@ -38,7 +38,13 @@ jobs:
           branch: ${{ env.NEW_BRANCH_NAME }}
           commit_message: "🔖 ブックマークを削除 #${{ github.event.issue.number }}"
 
+      - name: Check if PR exists
+        id: check_pr_exists
+        run: |
+          echo "::set-output name=count::$(gh pr list -s all | grep $NEW_BRANCH_NAME | wc -l)"
+
       - name: Create pull request
+        if: ${{ steps.check_pr_exists.outputs.count == 0 }}
         run: 'gh pr create --title "🔖 ブックマークを削除" --body "Closes #${{ github.event.issue.number }}"'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
