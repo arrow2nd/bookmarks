@@ -363,6 +363,14 @@ export const bookmarks: Bookmark[] = [{
   "tag": "開発",
   "color": "#4527a0",
 }, {
+  "id": "90317bdc17aa1f3cedd2b8d535d558de48b553b8a27c5670aa5f162c61db445b",
+  "title": "Patterns | APG | WAI | W3C",
+  "url": "https://www.w3.org/WAI/ARIA/apg/patterns/",
+  "tag": "開発",
+  "description":
+    "Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).",
+  "color": "#ffffff",
+}, {
   "id": "ae1d721b8d3e778d003f87f7d476ae8df6168b8d0b05d8036681443bcfbe25ee",
   "title": "ネーミング辞典：かっこいい名前をつけるためのカタカナ語一覧",
   "url": "https://naming-dic.com",
