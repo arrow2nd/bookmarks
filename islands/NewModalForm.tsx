@@ -28,7 +28,12 @@ export default function NewFormModal({ options }: NewFormProps) {
                 );
               }}
             >
-              <select class="block bg-white">
+              <select
+                class="block bg-white"
+                onChange={(e) => {
+                  tag.value = e.currentTarget.value;
+                }}
+              >
                 {options.map((t) => <option value={t}>{t}</option>)}
               </select>
               <input
