@@ -426,11 +426,6 @@ export const bookmarks: Bookmark[] = [{
     "Carbon is the easiest way to create and share beautiful images of your source code.",
   "color": "#000000",
 }, {
-  "id": "fac631dc6eceea53655886564c3b8b1dddc99690bf0d640464e30b650bdcaab5",
-  "title": "https://placy.org",
-  "url": "https://placy.org",
-  "tag": "便利ツール",
-}, {
   "id": "7669cec9c1d79c765e48eb2c00591fe4a31c243b40bff40eb2a63d73d06a6ed7",
   "title": "Free Online Favicon and Apple Icons Generator - iconifier.net",
   "url": "https://iconifier.net",
