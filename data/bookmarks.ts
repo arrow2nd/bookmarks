@@ -334,6 +334,12 @@ export const bookmarks: Bookmark[] = [{
     "https://www.asahi-net.or.jp/~ax2s-kmtn/internet/rdf/REC-sparql11-query-20130321.html",
   "tag": "リファレンス",
 }, {
+  "id": "15241ca6a4ccac8abdb746a672c80166fd4f31da7d679cbacd2c4c22584ffb08",
+  "title": "RFC日本語訳一覧",
+  "url": "https://tex2e.github.io/rfc-translater/html/",
+  "tag": "リファレンス",
+  "color": "#55acee",
+}, {
   "id": "c65fcba0b423ea6b8b73a9b1525badfbf4bfff4335d7486ca6dde427fd459f3c",
   "title": "ベクターシェルフ  |  無料・商用利用OKのイラスト素材サイト",
   "url": "https://vectorshelf.com/",
