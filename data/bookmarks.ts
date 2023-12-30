@@ -498,4 +498,12 @@ export const bookmarks: Bookmark[] = [{
   "description":
     "匿名ラジオ専門検索エンジン（非公式）です。調べにくいニッチなキーワードも、だいたい検索できます。",
   "color": "#ffffff",
+}, {
+  "id": "1adef3427dfe24ed507682bf2bd3b62c476da1e1e54c38aaca7edb873a26a06a",
+  "title": "Podex - ポッドキャストの全文検索",
+  "url": "https://podex.in/",
+  "tag": "便利ツール",
+  "description":
+    "Podexは、日々配信されるさまざまなPodcastの発言を全文検索できるサービスです。",
+  "color": "#f5f4f4",
 }];
