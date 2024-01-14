@@ -33,7 +33,7 @@ export default function Item(
           {title}
         </a>
         <div class="mt-1 text-sm text-gray-500" style={lineClamp}>
-          <span class="px-2 py-1 bg-gray-200 rounded-full">
+          <span class="px-2 py-1 bg-gray-200 dark:(bg-gray-800) rounded-full">
             {tag}
           </span>
           {description && <span class="ml-1 leading-6">{description}</span>}

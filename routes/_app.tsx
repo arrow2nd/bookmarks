@@ -9,7 +9,7 @@ export default function App({ Component }: PageProps) {
         <title>Bookmarks</title>
       </head>
       <body>
-        <main class="flex justify-center items-center px-6 py-12 min-h-screen bg-stone-100">
+        <main class="flex justify-center items-center px-6 py-12 min-h-screen bg-stone-100 dark:(bg-gray-900 text-gray-300)">
           <Component />
         </main>
       </body>
