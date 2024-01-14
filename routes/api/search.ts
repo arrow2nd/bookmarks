@@ -1,11 +1,11 @@
-import { HandlerContext } from "$fresh/server.ts";
+import { FreshContext } from "$fresh/server.ts";
 import { bookmarks } from "~/data/bookmarks.ts";
 
 /**
  * 検索
  * GET /api/search?tag=<タグ>&q=<クエリ>
  */
-export const handler = (req: Request, _ctx: HandlerContext): Response => {
+export const handler = (req: Request, _ctx: FreshContext): Response => {
   if (req.method !== "GET") {
     return new Response("Method not allowed", { status: 405 });
   }
@@ -25,9 +25,8 @@ export const handler = (req: Request, _ctx: HandlerContext): Response => {
       return true;
     }
 
-    // 簡易ファジー検索
-    const pattern = q.split("").join(".*");
-    const regex = new RegExp(pattern, "i");
+    // 部分一致
+    const regex = new RegExp(q, "i");
 
     // タイトル or 説明文にマッチするか
     return regex.test(b.title) ||
