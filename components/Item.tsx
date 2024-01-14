@@ -7,7 +7,6 @@ export default function Item(
   { id, title, url, tag, description, color }: Bookmark,
 ) {
   const removeURL = createRemoveIssueURL(id, title);
-  const subText = description ? `${tag} | ${description}` : tag;
 
   const lineClamp = {
     overflow: "hidden",
@@ -33,9 +32,12 @@ export default function Item(
         >
           {title}
         </a>
-        <p class="text-sm text-gray-500" style={lineClamp}>
-          {subText}
-        </p>
+        <div class="mt-1 text-sm text-gray-500" style={lineClamp}>
+          <span class="px-2 py-1 bg-gray-200 rounded-full">
+            {tag}
+          </span>
+          {description && <span class="ml-1 leading-6">{description}</span>}
+        </div>
       </div>
       <a
         class="ml-4 text-gray-400 hover:text-red-400 transition-colors"
