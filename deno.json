@@ -10,22 +10,13 @@
     "bookmark:remove": "deno run --allow-read --allow-write ./tools/remove.ts",
     "fmt:data": "deno fmt ./data"
   },
-  "lint": {
-    "rules": {
-      "tags": [
-        "fresh",
-        "recommended"
-      ]
-    }
-  },
-  "exclude": [
-    "**/_fresh/*"
-  ],
+  "lint": { "rules": { "tags": ["fresh", "recommended"] } },
+  "exclude": ["**/_fresh/*"],
   "imports": {
     "~/": "./",
-    "$fresh/": "https://deno.land/x/fresh@1.5.4/",
-    "preact": "https://esm.sh/preact@10.18.1",
-    "preact/": "https://esm.sh/preact@10.18.1/",
+    "$fresh/": "https://deno.land/x/fresh@1.6.1/",
+    "preact": "https://esm.sh/preact@10.19.2",
+    "preact/": "https://esm.sh/preact@10.19.2/",
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.2.2",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.1",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.0",
@@ -36,8 +27,5 @@
     "deno-dom-wasm": "https://deno.land/x/deno_dom@v0.1.42/deno-dom-wasm.ts",
     "canvas": "https://deno.land/x/canvas@v1.4.1/mod.ts"
   },
-  "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "preact"
-  }
+  "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" }
 }
