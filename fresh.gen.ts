@@ -2,27 +2,28 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $0 from "./routes/_404.tsx";
-import * as $1 from "./routes/_app.tsx";
-import * as $2 from "./routes/api/search.ts";
-import * as $3 from "./routes/api/tags.ts";
-import * as $4 from "./routes/index.tsx";
-import * as $$0 from "./islands/BookmarkList.tsx";
-import * as $$1 from "./islands/NewModalForm.tsx";
+import * as $_404 from "./routes/_404.tsx";
+import * as $_app from "./routes/_app.tsx";
+import * as $api_search from "./routes/api/search.ts";
+import * as $api_tags from "./routes/api/tags.ts";
+import * as $index from "./routes/index.tsx";
+import * as $BookmarkList from "./islands/BookmarkList.tsx";
+import * as $NewModalForm from "./islands/NewModalForm.tsx";
+import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
-    "./routes/_404.tsx": $0,
-    "./routes/_app.tsx": $1,
-    "./routes/api/search.ts": $2,
-    "./routes/api/tags.ts": $3,
-    "./routes/index.tsx": $4,
+    "./routes/_404.tsx": $_404,
+    "./routes/_app.tsx": $_app,
+    "./routes/api/search.ts": $api_search,
+    "./routes/api/tags.ts": $api_tags,
+    "./routes/index.tsx": $index,
   },
   islands: {
-    "./islands/BookmarkList.tsx": $$0,
-    "./islands/NewModalForm.tsx": $$1,
+    "./islands/BookmarkList.tsx": $BookmarkList,
+    "./islands/NewModalForm.tsx": $NewModalForm,
   },
   baseUrl: import.meta.url,
-};
+} satisfies Manifest;
 
 export default manifest;
