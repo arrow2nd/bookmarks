@@ -377,6 +377,14 @@ export const bookmarks: Bookmark[] = [{
     "Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).",
   "color": "#ffffff",
 }, {
+  "id": "bbb444b30e7aaab714a48a857b5324e78251fa8845e91187f98eee1b511add1b",
+  "title": "Next.js App Router Training",
+  "url": "https://nextjs-app-router-training.vercel.app/",
+  "tag": "開発",
+  "description":
+    "Introducing various basic patterns using Next.js' app router with simplified code.",
+  "color": "#3598db",
+}, {
   "id": "ae1d721b8d3e778d003f87f7d476ae8df6168b8d0b05d8036681443bcfbe25ee",
   "title": "ネーミング辞典：かっこいい名前をつけるためのカタカナ語一覧",
   "url": "https://naming-dic.com",
