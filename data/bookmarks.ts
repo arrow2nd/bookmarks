@@ -514,4 +514,11 @@ export const bookmarks: Bookmark[] = [{
   "description":
     "Podexは、日々配信されるさまざまなPodcastの発言を全文検索できるサービスです。",
   "color": "#f5f4f4",
+}, {
+  "id": "f0af6be19a27ad293dc17e83154f63d6e16281aecb5d72e4dd9c1eb5c0da0be2",
+  "title": "QRBTF Classic",
+  "url": "https://classic.qrbtf.com/",
+  "tag": "便利ツール",
+  "description": "QRBTF 参数化二维码生成器 Parametric QR Code Generator",
+  "color": "#44d7b6",
 }];
