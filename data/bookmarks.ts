@@ -521,4 +521,11 @@ export const bookmarks: Bookmark[] = [{
   "tag": "便利ツール",
   "description": "QRBTF 参数化二维码生成器 Parametric QR Code Generator",
   "color": "#44d7b6",
+}, {
+  "id": "ac665060e728016324e7b83ad9d4cfaaa93409968aef83a879c9ec563bfe3d91",
+  "title": "terminal.sexy - Terminal Color Scheme Designer",
+  "url": "https://terminal.sexy/",
+  "tag": "便利ツール",
+  "description":
+    "Design, edit and share custom terminal\n    color schemes. Export them to a wide range of terminals, include Xresources\n    (urxvt, xterm, aterm, eterm, rxvt), iTerm2, Terminal.app, Termite,\n    Terminator, Konsole, Guake and many more.",
 }];
