@@ -528,4 +528,10 @@ export const bookmarks: Bookmark[] = [{
   "tag": "便利ツール",
   "description":
     "Design, edit and share custom terminal\n    color schemes. Export them to a wide range of terminals, include Xresources\n    (urxvt, xterm, aterm, eterm, rxvt), iTerm2, Terminal.app, Termite,\n    Terminator, Konsole, Guake and many more.",
+}, {
+  "id": "913d78c4daa91a074e83024f46c9386339ee81f82004773de13cf5b573b13e6b",
+  "title": "Val Town",
+  "url": "https://www.val.town/",
+  "tag": "便利ツール",
+  "color": "#ffffff",
 }];
