@@ -117,6 +117,14 @@ export const bookmarks: Bookmark[] = [{
   "description": "感性を刺激するWebデザインギャラリー＜bookma!＞",
   "color": "#040000",
 }, {
+  "id": "b318fc4273f08c401cec97de39fc4fff5a45e63af7fa5accb7c0d16a5bb5e5a5",
+  "title": "Charco Design | Free & premium icons, illustrations & UI/UX kits",
+  "url": "https://www.charco.design/",
+  "tag": "Webデザイン",
+  "description":
+    "Charco is a curated list of high-quality design resources including free and premium icons, illustrations, UI/UX kits, graphics, templates, and more. ",
+  "color": "#1a1a1a",
+}, {
   "id": "1817dc5f3ef6f652f07772d72a2ab140a09d7a6c65a6ed1d5ba145cc104b07fb",
   "title": "Slim icons — Free & Open Source Icon Library",
   "url": "https://slimicons.com",
