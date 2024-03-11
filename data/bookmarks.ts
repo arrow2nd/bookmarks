@@ -125,6 +125,14 @@ export const bookmarks: Bookmark[] = [{
     "Charco is a curated list of high-quality design resources including free and premium icons, illustrations, UI/UX kits, graphics, templates, and more. ",
   "color": "#1a1a1a",
 }, {
+  "id": "61323217e2ed000de7350e85da80ca6ce35eedcfa4bf6a43a2367b248425d3f7",
+  "title": "グッドサイト | 優秀なウェブデザインのサイトまとめ",
+  "url": "https://goodsite.work/",
+  "tag": "Webデザイン",
+  "description":
+    "グッドサイトは、ウェブデザイナーが参考にしたくなるウェブデザインの優れたサイトをまとめたサイトです。",
+  "color": "#ffffff",
+}, {
   "id": "1817dc5f3ef6f652f07772d72a2ab140a09d7a6c65a6ed1d5ba145cc104b07fb",
   "title": "Slim icons — Free & Open Source Icon Library",
   "url": "https://slimicons.com",
