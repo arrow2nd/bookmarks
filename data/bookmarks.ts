@@ -401,6 +401,15 @@ export const bookmarks: Bookmark[] = [{
     "Introducing various basic patterns using Next.js' app router with simplified code.",
   "color": "#3598db",
 }, {
+  "id": "4100f83ef4f06c8a63033f8d1529d64a4fbb12b8d38ff4e4ad2f141f8e2de3d5",
+  "title":
+    "少しの記述でユーザビリティやアクセシビリティを向上させるHTML/CSSテクニック集 – TAKLOG",
+  "url":
+    "https://www.tak-dcxi.com/article/html-css-techniques-to-improve-usability-and-accessibility-with-minimal-code/",
+  "tag": "開発",
+  "description":
+    "少しの記述・工夫でユーザビリティやアクセシビリティを向上させるHTML/CSSテクニックを独断と偏見で集めてみました。",
+}, {
   "id": "ae1d721b8d3e778d003f87f7d476ae8df6168b8d0b05d8036681443bcfbe25ee",
   "title": "ネーミング辞典：かっこいい名前をつけるためのカタカナ語一覧",
   "url": "https://naming-dic.com",
