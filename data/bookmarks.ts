@@ -410,6 +410,14 @@ export const bookmarks: Bookmark[] = [{
   "description":
     "少しの記述・工夫でユーザビリティやアクセシビリティを向上させるHTML/CSSテクニックを独断と偏見で集めてみました。",
 }, {
+  "id": "a573d61236bc5208015220de644e5bedce35034ca467ac6f1f8adc2a1a904707",
+  "title": "The Book of Shaders",
+  "url": "https://thebookofshaders.com/?lan=jp",
+  "tag": "開発",
+  "description":
+    "Gentle step-by-step guide through the abstract and complex universe of Fragment Shaders.",
+  "color": "#030303",
+}, {
   "id": "ae1d721b8d3e778d003f87f7d476ae8df6168b8d0b05d8036681443bcfbe25ee",
   "title": "ネーミング辞典：かっこいい名前をつけるためのカタカナ語一覧",
   "url": "https://naming-dic.com",
