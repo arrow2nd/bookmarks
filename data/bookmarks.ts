@@ -418,6 +418,14 @@ export const bookmarks: Bookmark[] = [{
     "Gentle step-by-step guide through the abstract and complex universe of Fragment Shaders.",
   "color": "#030303",
 }, {
+  "id": "dcb24ab0ecd9d8fae1a538682bff10c7d9c3fbe8066e789100dfa90a1ff782f8",
+  "title": "Easing | GSAP | Docs & Learning",
+  "url": "https://gsap.com/docs/v3/Eases/",
+  "tag": "開発",
+  "description":
+    '"slow", "rough", and "expoScale" eases are not in the core - they are packaged together in an EasePack file in order to minimize file size. "CustomEase",  "CustomBounce", and "CustomWiggle" are packaged independently as well (not in the core).',
+  "color": "#acff85",
+}, {
   "id": "ae1d721b8d3e778d003f87f7d476ae8df6168b8d0b05d8036681443bcfbe25ee",
   "title": "ネーミング辞典：かっこいい名前をつけるためのカタカナ語一覧",
   "url": "https://naming-dic.com",
