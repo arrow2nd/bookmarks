@@ -575,4 +575,12 @@ export const bookmarks: Bookmark[] = [{
   "url": "https://www.val.town/",
   "tag": "便利ツール",
   "color": "#ffffff",
+}, {
+  "id": "9d42c1c8eff4ebe53c65bec73bc04dc08fd013a8be14bb747bb6697cf1920b06",
+  "title": "Remap",
+  "url": "https://remap-keys.app/configure",
+  "tag": "便利ツール",
+  "description":
+    "Remap allows you to find, build, set up and customize your keyboard quickly and easily in Web Browser.",
+  "color": "#000000",
 }];
