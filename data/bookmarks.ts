@@ -426,6 +426,14 @@ export const bookmarks: Bookmark[] = [{
     '"slow", "rough", and "expoScale" eases are not in the core - they are packaged together in an EasePack file in order to minimize file size. "CustomEase",  "CustomBounce", and "CustomWiggle" are packaged independently as well (not in the core).',
   "color": "#acff85",
 }, {
+  "id": "7784d3d46614ee9986db24bb33cb8e8b1f041990b7df642e54a453ee22faedd6",
+  "title":
+    "Your code displays Japanese wrong | Your Code Displays Japanese Wrong",
+  "url": "https://heistak.github.io/your-code-displays-japanese-wrong/",
+  "tag": "開発",
+  "description":
+    "A static site to link people to when their code is displaying Japanese wrong.",
+}, {
   "id": "ae1d721b8d3e778d003f87f7d476ae8df6168b8d0b05d8036681443bcfbe25ee",
   "title": "ネーミング辞典：かっこいい名前をつけるためのカタカナ語一覧",
   "url": "https://naming-dic.com",
