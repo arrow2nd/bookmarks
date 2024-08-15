@@ -379,6 +379,14 @@ export const bookmarks: Bookmark[] = [{
     "Increase comprehension, retention, and delight audiences with hundreds of unique hand drawn SVG line art doodles and animated PNGs.",
   "color": "#000000",
 }, {
+  "id": "724f175be422e1aa0999191aa9b624e575441d7dbbae820bd36f12ba66b93930",
+  "title": "商用可・フリーイラスト素材｜ソコスト",
+  "url": "https://soco-st.com/",
+  "tag": "画像素材",
+  "description":
+    "商用可のシンプルでかわいいフリーイラスト素材集。画像・ベクター形式でDL！色変更可能！Web・広告・企画書・資料などご自由に！",
+  "color": "#292929",
+}, {
   "id": "22bc28525b1dcded9db2867086b46face241212394d44ac262560c89727685bd",
   "title": "https://creator.kodular.io",
   "url": "https://creator.kodular.io",
