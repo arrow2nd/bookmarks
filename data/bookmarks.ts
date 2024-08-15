@@ -387,6 +387,15 @@ export const bookmarks: Bookmark[] = [{
     "商用可のシンプルでかわいいフリーイラスト素材集。画像・ベクター形式でDL！色変更可能！Web・広告・企画書・資料などご自由に！",
   "color": "#292929",
 }, {
+  "id": "12513aa1eba91a8495999e2b297628debc98e1f5b1502ed1d65c0208a843da2c",
+  "title": "Humaaans: Mix-&-Match illustration library",
+  "url": "https://www.humaaans.com/",
+  "tag": "画像素材",
+  "description":
+    "Mix-&-match illustrations of people with a design library for InVIsion Studio and Sketch.",
+  "color": "#191847",
+},
+{
   "id": "89dd5cc8384b0691617b817c0c9789afe3713546b57f0564a1bb7ffbdc1251f9",
   "title": "Open Doodles",
   "url": "https://www.opendoodles.com/",
