@@ -404,6 +404,12 @@ export const bookmarks: Bookmark[] = [{
     "A library of sketchy illustrations of people free for personal and commercial use.",
   "color": "#000000",
 }, {
+  "id": "91cda8c179e19f29132259ce5859ff9cefc32d914d01f2bbb78fa8ba93c6f73b",
+  "title": "404 Illustrations",
+  "url": "https://error404.fun/",
+  "tag": "画像素材",
+  "color": "#002edc",
+}, {
   "id": "22bc28525b1dcded9db2867086b46face241212394d44ac262560c89727685bd",
   "title": "https://creator.kodular.io",
   "url": "https://creator.kodular.io",
