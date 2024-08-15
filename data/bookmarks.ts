@@ -394,6 +394,15 @@ export const bookmarks: Bookmark[] = [{
   "description":
     "Mix-&-match illustrations of people with a design library for InVIsion Studio and Sketch.",
   "color": "#191847",
+},
+{
+  "id": "89dd5cc8384b0691617b817c0c9789afe3713546b57f0564a1bb7ffbdc1251f9",
+  "title": "Open Doodles",
+  "url": "https://www.opendoodles.com/",
+  "tag": "画像素材",
+  "description":
+    "A library of sketchy illustrations of people free for personal and commercial use.",
+  "color": "#000000",
 }, {
   "id": "22bc28525b1dcded9db2867086b46face241212394d44ac262560c89727685bd",
   "title": "https://creator.kodular.io",
