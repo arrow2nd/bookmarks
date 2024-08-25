@@ -238,6 +238,15 @@ export const bookmarks: Bookmark[] = [{
   "tag": "アイコン",
   "color": "#ffdb1e",
 }, {
+  "id": "cb63be74d1b217a9fe16df049b1752a832bbc29978967deb2ee4aca5ca41f674",
+  "title": "イラストレーション・アイコン素材｜デジタル庁",
+  "url":
+    "https://www.digital.go.jp/policies/servicedesign/designsystem/Illustration_Icons",
+  "tag": "アイコン",
+  "description":
+    "デジタル庁は、デジタル社会形成の司令塔として、未来志向のDX（デジタル・トランスフォーメーション）を大胆に推進し、デジタル時代の官民のインフラを一気呵成に作り上げることを目指します。",
+  "color": "#0017c1",
+}, {
   "id": "6e06cf81d17fab0206d8252f8066442b164dc7ec03159826bd387b54630b45c0",
   "title":
     "STUDIO CHARON | 「すたじおかろん」＆「CHARON株式会社」開発のゲーム紹介サイト",
@@ -394,8 +403,7 @@ export const bookmarks: Bookmark[] = [{
   "description":
     "Mix-&-match illustrations of people with a design library for InVIsion Studio and Sketch.",
   "color": "#191847",
-},
-{
+}, {
   "id": "89dd5cc8384b0691617b817c0c9789afe3713546b57f0564a1bb7ffbdc1251f9",
   "title": "Open Doodles",
   "url": "https://www.opendoodles.com/",
