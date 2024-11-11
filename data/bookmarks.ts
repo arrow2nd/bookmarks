@@ -256,6 +256,13 @@ export const bookmarks: Bookmark[] = [{
     "デジタル庁は、デジタル社会形成の司令塔として、未来志向のDX（デジタル・トランスフォーメーション）を大胆に推進し、デジタル時代の官民のインフラを一気呵成に作り上げることを目指します。",
   "color": "#0017c1",
 }, {
+  "id": "8e7adef1cefdb3aed64bfbf2c55afa9d9a9a67ed742697c27da711e094d009e7",
+  "title": "GitHub - pqoqubbw/icons: beautifully crafted animated icons",
+  "url": "https://github.com/pqoqubbw/icons",
+  "tag": "アイコン",
+  "description":
+    "beautifully crafted animated icons. Contribute to pqoqubbw/icons development by creating an account on GitHub.",
+}, {
   "id": "6e06cf81d17fab0206d8252f8066442b164dc7ec03159826bd387b54630b45c0",
   "title":
     "STUDIO CHARON | 「すたじおかろん」＆「CHARON株式会社」開発のゲーム紹介サイト",
