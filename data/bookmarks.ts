@@ -142,6 +142,13 @@ export const bookmarks: Bookmark[] = [{
     "ENTACL GRAPHICXXXは人を基軸としたデザイン会社です。　WEBサイト/WEBコンテンツ企画・制作、WEBシステム開発、DTP、スチール撮影、ムービー撮影、映像編集などの幅広いクリエイティブをご提供します。\nENTACL GRAPHICXXX Inc. specialize in desiging. We design websites, movies, logo, DTP, Apps UI, & other products. And we have much experiences especially about entertainment area including the game industry. We handle planning ,promotion, websites, promotion video, Motion graphics,UI, goods and others. Please feel free to contact us.",
   "color": "#292929",
 }, {
+  "id": "c8658103e5e75e5d38356cc846a2f8fe41404e4f4976aa6a0f8b6ef36420ee73",
+  "title": "Web Motion Catalog",
+  "url": "https://web-motion-catalog.com/",
+  "tag": "Webデザイン",
+  "description":
+    "Web Motion CatalogはWebデザインにおけるさまざまな動きのアイデアを集めたサイトです。ここに掲載されているものはすべて自由にお使いいただけます。",
+}, {
   "id": "1817dc5f3ef6f652f07772d72a2ab140a09d7a6c65a6ed1d5ba145cc104b07fb",
   "title": "Slim icons — Free & Open Source Icon Library",
   "url": "https://slimicons.com",
