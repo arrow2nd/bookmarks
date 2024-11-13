@@ -660,4 +660,12 @@ export const bookmarks: Bookmark[] = [{
   "description":
     "Remap allows you to find, build, set up and customize your keyboard quickly and easily in Web Browser.",
   "color": "#000000",
+}, {
+  "id": "3fe682b3eb281cb684a23dd012c207361793deb4e67b43cc0052670c745edab2",
+  "title": "I don't have spotify",
+  "url": "https://idonthavespotify.donado.co/",
+  "tag": "便利ツール",
+  "description":
+    "Effortlessly convert Spotify links to your preferred streaming service",
+  "color": "#00ff63",
 }];
